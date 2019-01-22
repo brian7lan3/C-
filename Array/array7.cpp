@@ -4,22 +4,15 @@ using namespace std;
 
 int main()
 {
-	enum day
-	{
-		Sunday,
-		Monday,
-		Tuesday,
-		Wednesday,
-		Thursday,
-		Friday,
-		Saturday
+	int scores[][5] = {
+		{ 92 , 73 , 57 , 98 , 89},
+		{ 88 , 76 , 23 , 95 , 72},
+		{ 94 , 82 , 63 , 99 , 94},
 	};
 	
-	enum day today = Friday;		//宣告列舉的變數today為Friday 
-	
-	if (today == Friday) {
-		cout << "Today is Friday" << endl;
-	}
-	
+	cout << scores[1][2] << endl;
+	cout << scores[2][1] << endl;
+	cout << scores[3][1] << endl;
+
 	return 0;
 }
