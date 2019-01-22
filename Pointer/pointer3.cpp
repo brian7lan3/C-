@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-	int integer1 = 5;
+	const int integer1 = 5;
 	const int *pointer1;
 	
 	pointer1 = &integer1;
