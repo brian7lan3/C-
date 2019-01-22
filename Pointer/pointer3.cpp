@@ -2,14 +2,13 @@
 #include <string>
 using namespace std;
 
-int main()
+//把计argc琌㏑把计计ヘ,珹祘Α
+//材把计argv琌char皚夹 
+int main(int argc, char * argv[])
 {
-	const int integer1 = 5;
-	const int *pointer1;
-	
-	pointer1 = &integer1;
-	
-	cout << *pointer1 << endl;
+	for (int loop_index = 0; loop_index < argc; loop_index++) {
+		cout << argv[loop_index] << endl;
+	}
 	
 	return 0;
 }
