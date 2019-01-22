@@ -15,6 +15,7 @@ int main(int argc, char const *argv[])
     structure2.previous = &structure1;
 
     structure *pointer2 = &structure1;
+    cout << pointer2 -> integer1 << endl;
     pointer2 -> integer1 = 30;
 
     cout << pointer2 -> integer1 << endl;

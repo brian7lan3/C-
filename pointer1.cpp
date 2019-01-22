@@ -14,11 +14,10 @@ int main(int argc, char const *argv[])
     structure1.next = &structure2;
     structure2.next = &structure3;
 
-    structure *pointer1 = &structure2;
-    pointer1 -> integer1 = 7;
-
-    cout << pointer1 -> integer1 << endl;
-
+	structure1.next -> next -> integer1 = 7;
+	
+	cout << structure3.integer1 << endl;
+	
     return 0;
 }
 
