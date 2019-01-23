@@ -14,7 +14,26 @@ int main()
 	
 	//練習完畢的檔案，準備做作業 
 	
+	int *values[3];
 	
+	struct structure {
+		int name_id;
+	};
+	
+	structure structure1, structure2, structure3;
+	
+	structure *pointer = &structure1;	//創建pointer，並綁定 記憶體位置 (一定要這樣子寫) 
+	
+	values[0] = &(pointer -> name_id);	// 
+	
+	
+	
+	pointer -> name_id = 1111;
+	cout << *values[0] << endl; 	//一定要加[0]， 
+	
+	
+	
+	return 0;
 }
 
 int brian6()
@@ -36,7 +55,7 @@ int brian5()
 
 int brian4()
 {
-		double values[10];		//建立一個陣列，並用指標的方式設定第一個元素為3.14159 
+	double values[10];		//建立一個陣列，並用指標的方式設定第一個元素為3.14159 
 	
 	*values = 3.14159;
 	
