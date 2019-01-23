@@ -12,6 +12,26 @@ int main()
 	
 	// 2. 用指標的方式，把結構指入進去
 	
+	double values[10];		//建立一個陣列，並用指標的方式設定第一個元素為3.14159 
+	
+	*values = 3.14159;
+	
+	cout << values[0] << endl;
+	
+	
+	
+	//*(values + 1) = 666666;
+	//cout << values[1] << endl;
+
+
+
+	return 0;
+}
+
+
+
+int brian3()
+{
 	double * values = new double[10];		//宣告一個新的指標values，並且分配給他新的記憶體空間[10]	
 	
 	if(values == NULL) exit(1); 
@@ -19,13 +39,7 @@ int main()
 	values[5] = 3.14159;
 	
 	cout << "The stored value = " << values[5] << endl;
-	
-
-
-	return 0;
 }
-
-
 
 
 int brian2()
