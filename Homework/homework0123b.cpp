@@ -29,6 +29,10 @@ int main()
 	pointer -> name_id = 2222;
 	
 	cout << pointer -> name_id << endl;
+	
+	for (pointer -> name_id = 0; (pointer -> name_id) < 3; (pointer -> name_id)++) {
+		cout << pointer -> name_id << endl;
+	}
 
 	return 0;
 }
