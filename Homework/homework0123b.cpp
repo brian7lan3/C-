@@ -2,22 +2,12 @@
 #include <string>
 #include <stdio.h>
 
-#define MAX 5
 using namespace std;
-
-
 
 
 
 int main()
 {
-//	int i = 0;
-//	int Array[MAX];
-//	for (i = 0; i < MAX; i++) Array[i] = i;
-//	
-//	int *ptr = &Array[0];
-	
-	
 	struct structure {
 		int name_id;
 	};
@@ -26,13 +16,16 @@ int main()
 	
 	structure *pointer = &people[3];
 	
-	pointer -> name_id = 2222;
+	
+	pointer -> name_id = 111;
+	(pointer+1) -> name_id = 222;
+	(pointer+2) -> name_id = 333;
 	
 	cout << pointer -> name_id << endl;
-	
-	for (pointer -> name_id = 0; (pointer -> name_id) < 3; (pointer -> name_id)++) {
-		cout << pointer -> name_id << endl;
-	}
+	cout << (pointer+1)-> name_id << endl;
+	cout << (pointer+2) -> name_id << endl;
+
+
 
 	return 0;
 }
