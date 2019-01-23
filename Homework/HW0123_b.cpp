@@ -12,7 +12,25 @@ int main()
 	
 	// 2. 用指標的方式，把結構指入進去
 	
-	struct structure{
+	double * values = new double[10];		//宣告一個新的指標values，並且分配給他新的記憶體空間[10]	
+	
+	if(values == NULL) exit(1); 
+	
+	values[5] = 3.14159;
+	
+	cout << "The stored value = " << values[5] << endl;
+	
+
+
+	return 0;
+}
+
+
+
+
+int brian2()
+{
+		struct structure{
 		string text;
 		int numbers[100];
 	};
@@ -26,17 +44,7 @@ int main()
 	cout << pointer -> text << endl;
 	
 	// 用結構的型態創建兩個東西，一個是新創的結構、一個是指標的名稱 
-	
-	
-
-
-	return 0;
 }
-
-
-
-
-
 
 
 int brian()
