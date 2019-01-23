@@ -14,6 +14,34 @@ int main()
 	
 	//練習完畢的檔案，準備做作業 
 	
+	
+	struct structure {
+		int name_id;
+	};
+	
+	structure structure1, structure2, structure3;
+	
+
+	structure1.name_id = 1111;		// 將結構裡面的id賦予值:1111 
+	
+	
+	
+	int *pointer1 = &structure1.name_id;		//將這個位置的記憶體位置指向 pointer1
+	int *values = new int[3];		// 宣告新的陣列 values ，並且陣列大小是3 
+	
+	values[0] = *pointer1;		// 將陣列裡面元素0的位置，寫入值 pointer1 
+	
+	
+	cout << values[0] << endl;
+	
+	
+	
+	
+	return 0;
+}
+
+int HW1()
+{
 	int *values[3];
 	
 	struct structure {
@@ -30,10 +58,6 @@ int main()
 	
 	pointer -> name_id = 1111;
 	cout << *values[0] << endl; 	//一定要加[0]， 
-	
-	
-	
-	return 0;
 }
 
 int brian6()
