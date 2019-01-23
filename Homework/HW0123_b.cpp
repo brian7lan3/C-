@@ -12,7 +12,33 @@ int main()
 	
 	// 2. 用指標的方式，把結構指入進去
 	
-	double values[10];		//建立一個陣列，並用指標的方式設定第一個元素為3.14159 
+	
+	
+
+
+	return 0;
+}
+
+int brian6()
+{
+	const char *message = "Hello from C++. ";	
+	cout << message << endl;
+}
+
+
+int brian5()
+{
+	double values[4] = {0.0 , 1.0 , 2.0 , 3.0};
+	
+	double *pointer = &values[0];
+	
+	cout << *(pointer + 3) << endl;
+}
+
+
+int brian4()
+{
+		double values[10];		//建立一個陣列，並用指標的方式設定第一個元素為3.14159 
 	
 	*values = 3.14159;
 	
@@ -22,12 +48,7 @@ int main()
 	
 	//*(values + 1) = 666666;
 	//cout << values[1] << endl;
-
-
-
-	return 0;
 }
-
 
 
 int brian3()
