@@ -5,27 +5,24 @@
 
 using namespace std;
 
-//從函數傳回結構 
-struct complex_number
-{
-	int real;
-	int imaginary;
-};
 
-double magnitude(complex_number * c);
 
+int factorial(int value); 
 
 int main()
-{
-	complex_number complex { 3 , 4};
-	
-	cout << "Maginitude of the complex number: " << magnitude(&complex) << endl;
+{	
+	cout << "6! = " << factorial(6) << endl;
 	
 	return 0;
 }
 
 
-double magnitude(complex_number * c)
+
+int factorial(int value)
 {
-	return aqrt(c->real * c->real + c->imaginary * c->imaginary);
+	if (value == 1){
+		return value;
+	}else {
+		return value * factorial(value - 1);
+	}
 }
