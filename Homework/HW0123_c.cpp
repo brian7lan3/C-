@@ -8,11 +8,11 @@ using namespace std;
 
 int main()
 {
-	// 1. ¥ý³Ð«Ø¤@­Ó°}¦C
+	// 1. ï¿½ï¿½ï¿½Ð«Ø¤@ï¿½Ó°}ï¿½C
 	
-	// 2. ¥Î«ü¼Ðªº¤è¦¡¡A§âµ²ºc«ü¤J¶i¥h
+	// 2. ï¿½Î«ï¿½ï¿½Ðªï¿½ï¿½è¦¡ï¿½Aï¿½âµ²ï¿½cï¿½ï¿½ï¿½Jï¿½iï¿½h
 	
-	//½m²ß§¹²¦ªºÀÉ®×¡A·Ç³Æ°µ§@·~ 
+	//ï¿½mï¿½ß§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É®×¡Aï¿½Ç³Æ°ï¿½ï¿½@ï¿½~ 
 	
 	
 	struct structure {
@@ -22,20 +22,26 @@ int main()
 	structure structure1, structure2, structure3;
 	
 
-	structure1.name_id = 1111;		// ±Nµ²ºc¸Ì­±ªºid½á¤©­È:1111 
+	structure1.name_id = 1111;		// ï¿½Nï¿½ï¿½ï¿½cï¿½Ì­ï¿½ï¿½ï¿½idï¿½á¤©ï¿½ï¿½:1111 
 	structure2.name_id = 2222;
 	structure3.name_id = 3333;
 	
 	
-	int *pointer1 = &structure1.name_id;		//±N³o­Ó¦ì¸mªº°O¾ÐÅé¦ì¸m«ü¦V pointer1
-	int *values = new int[3];		// «Å§i·sªº°}¦C values ¡A¨Ã¥B°}¦C¤j¤p¬O3 
+	int *pointer1 = &structure1.name_id;		//ï¿½Nï¿½oï¿½Ó¦ï¿½mï¿½ï¿½ï¿½Oï¿½ï¿½ï¿½ï¿½ï¿½mï¿½ï¿½ï¿½V pointer1
+	int *pointer2 = &structure2.name_id;
+	int *pointer3 = &structure3.name_id;
 	
-	*values = *pointer1;		// ±N°}¦C¸Ì­±¤¸¯À0ªº¦ì¸m¡A¼g¤J­È pointer1 
+	int *values = new int[3];		// ï¿½Å§iï¿½sï¿½ï¿½ï¿½}ï¿½C values ï¿½Aï¿½Ã¥Bï¿½}ï¿½Cï¿½jï¿½pï¿½O3 
+	
+	*values = *pointer1;		// ï¿½Nï¿½}ï¿½Cï¿½Ì­ï¿½ï¿½ï¿½ï¿½ï¿½0ï¿½ï¿½ï¿½ï¿½mï¿½Aï¿½gï¿½Jï¿½ï¿½ pointer1 
+	*(values + 1) = *pointer2;
+	*(values + 2) = *pointer3;
 	
 	
-	cout << values[0] << endl;		// Åã¥Ü²Ä¤@­Óµ²ªGµª®× 
 	
-	
+	cout << values[0] << endl;		// ï¿½ï¿½Ü²Ä¤@ï¿½Óµï¿½ï¿½Gï¿½ï¿½ï¿½ï¿½ 
+	cout << values[1] << endl;
+	cout << values[2] << endl;
 	
 	
 	
@@ -55,14 +61,14 @@ int HW1()
 	
 	structure structure1, structure2, structure3;
 	
-	structure *pointer = &structure1;	//³Ð«Øpointer¡A¨Ã¸j©w °O¾ÐÅé¦ì¸m (¤@©w­n³o¼Ë¤l¼g) 
+	structure *pointer = &structure1;	//ï¿½Ð«ï¿½pointerï¿½Aï¿½Ã¸jï¿½w ï¿½Oï¿½ï¿½ï¿½ï¿½ï¿½m (ï¿½@ï¿½wï¿½nï¿½oï¿½Ë¤lï¿½g) 
 	
 	values[0] = &(pointer -> name_id);	// 
 	
 	
 	
 	pointer -> name_id = 1111;
-	cout << *values[0] << endl; 	//¤@©w­n¥[[0]¡A 
+	cout << *values[0] << endl; 	//ï¿½@ï¿½wï¿½nï¿½[[0]ï¿½A 
 }
 
 int brian6()
@@ -84,7 +90,7 @@ int brian5()
 
 int brian4()
 {
-	double values[10];		//«Ø¥ß¤@­Ó°}¦C¡A¨Ã¥Î«ü¼Ðªº¤è¦¡³]©w²Ä¤@­Ó¤¸¯À¬°3.14159 
+	double values[10];		//ï¿½Ø¥ß¤@ï¿½Ó°}ï¿½Cï¿½Aï¿½Ã¥Î«ï¿½ï¿½Ðªï¿½ï¿½è¦¡ï¿½]ï¿½wï¿½Ä¤@ï¿½Ó¤ï¿½ï¿½ï¿½ï¿½ï¿½3.14159 
 	
 	*values = 3.14159;
 	
@@ -99,7 +105,7 @@ int brian4()
 
 int brian3()
 {
-	double * values = new double[10];		//«Å§i¤@­Ó·sªº«ü¼Ðvalues¡A¨Ã¥B¤À°tµ¹¥L·sªº°O¾ÐÅéªÅ¶¡[10]	
+	double * values = new double[10];		//ï¿½Å§iï¿½@ï¿½Ó·sï¿½ï¿½ï¿½ï¿½ï¿½ï¿½valuesï¿½Aï¿½Ã¥Bï¿½ï¿½ï¿½tï¿½ï¿½ï¿½Lï¿½sï¿½ï¿½ï¿½Oï¿½ï¿½ï¿½ï¿½Å¶ï¿½[10]	
 	
 	if(values == NULL) exit(1); 
 	
@@ -111,20 +117,22 @@ int brian3()
 
 int brian2()
 {
+	
+	
 		struct structure{
 		string text;
 		int numbers[100];
 	};
 	
-	structure structure1;		//³Ð«Ø¤@­Óµ²ºc ¡A ¦WºÙ¬O structure1 
-	structure *pointer = &structure1;		//³Ð«Ø¤@­Ó«ü¼Ð
-	//¨Ã¥B Åý structure1 ªº°O¾ÐÅé¦ì¸m«ü¦V pointer
+	structure structure1;		//ï¿½Ð«Ø¤@ï¿½Óµï¿½ï¿½c ï¿½A ï¿½Wï¿½Ù¬O structure1 
+	structure *pointer = &structure1;		//ï¿½Ð«Ø¤@ï¿½Ó«ï¿½ï¿½ï¿½
+	//ï¿½Ã¥B ï¿½ï¿½ structure1 ï¿½ï¿½ï¿½Oï¿½ï¿½ï¿½ï¿½ï¿½mï¿½ï¿½ï¿½V pointer
 	
 	pointer -> text = "Hello from the arrow operator.";
 	
 	cout << pointer -> text << endl;
 	
-	// ¥Îµ²ºcªº«¬ºA³Ð«Ø¨â­ÓªF¦è¡A¤@­Ó¬O·s³Ðªºµ²ºc¡B¤@­Ó¬O«ü¼Ðªº¦WºÙ 
+	// ï¿½Îµï¿½ï¿½cï¿½ï¿½ï¿½ï¿½ï¿½Aï¿½Ð«Ø¨ï¿½ÓªFï¿½ï¿½Aï¿½@ï¿½Ó¬Oï¿½sï¿½Ðªï¿½ï¿½ï¿½ï¿½cï¿½Bï¿½@ï¿½Ó¬Oï¿½ï¿½ï¿½Ðªï¿½ï¿½Wï¿½ï¿½ 
 }
 
 
@@ -132,10 +140,10 @@ int brian()
 {
 	double values[4] = {0.55 , 1.1 , 2.22 , 3.333};
 	
-	double *pointer = &values[0];		//²{¦b¡AÀò±o¤F¤@­Ó«ü¦V²Ä¤@­Ó¤¸¯Àªº«ü¼Ð!!! 
+	double *pointer = &values[0];		//ï¿½{ï¿½bï¿½Aï¿½ï¿½oï¿½Fï¿½@ï¿½Ó«ï¿½ï¿½Vï¿½Ä¤@ï¿½Ó¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½!!! 
 	
-	cout << "«ü¼Ð «ü¦V²Ä¤@­Ó¤¸¯À : " << *pointer << endl; 
-	cout << "«ü¼Ð «ü¦V²Ä¤G­Ó¤¸¯À : " << *(pointer + 1) << endl; 
-	cout << "«ü¼Ð «ü¦V²Ä¤T­Ó¤¸¯À : " << *(pointer + 2) << endl; 
-	cout << "«ü¼Ð «ü¦V²Ä¥|­Ó¤¸¯À : " << *(pointer + 3) << endl; //¥i¥H±q²Ä¤@­Ó¤¸¯À¡A¥Xµo «ü¦V¥ô·N¤@­Ó¤¸¯À 
+	cout << "ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Vï¿½Ä¤@ï¿½Ó¤ï¿½ï¿½ï¿½ : " << *pointer << endl; 
+	cout << "ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Vï¿½Ä¤Gï¿½Ó¤ï¿½ï¿½ï¿½ : " << *(pointer + 1) << endl; 
+	cout << "ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Vï¿½Ä¤Tï¿½Ó¤ï¿½ï¿½ï¿½ : " << *(pointer + 2) << endl; 
+	cout << "ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Vï¿½Ä¥|ï¿½Ó¤ï¿½ï¿½ï¿½ : " << *(pointer + 3) << endl; //ï¿½iï¿½Hï¿½qï¿½Ä¤@ï¿½Ó¤ï¿½ï¿½ï¿½ï¿½Aï¿½Xï¿½o ï¿½ï¿½ï¿½Vï¿½ï¿½Nï¿½@ï¿½Ó¤ï¿½ï¿½ï¿½ 
 }
