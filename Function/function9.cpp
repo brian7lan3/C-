@@ -6,7 +6,7 @@
 using namespace std;
 
 
-
+//¨Ï¥Î»¼°j 
 int factorial(int value); 
 
 int main()
