@@ -7,8 +7,8 @@ using namespace std;
 void greeting(void);
 long adder(int x, int y);		//ㄓ琌璶ㄧ计Θ 
 
-
-
+//狦ㄏノㄧ计ぇ玡﹚竡ウ碞ぃゲㄏノㄧ计絪亩竟镑㊣ㄧ计玡絋粄ウぃ惠璶 
+ 
 int main()
 {
 	int value1 = 5, value2 = 10;
