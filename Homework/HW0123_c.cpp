@@ -30,13 +30,10 @@ int main()
 	int *pointer1 = &structure1.name_id;		//將這個位置的記憶體位置指向 pointer1
 	int *values = new int[3];		// 宣告新的陣列 values ，並且陣列大小是3 
 	
-	values[0] = *pointer1;		// 將陣列裡面元素0的位置，寫入值 pointer1 
+	*values = *pointer1;		// 將陣列裡面元素0的位置，寫入值 pointer1 
 	
 	
-	cout << values[0] << endl;		// 顯示第一個結果答案
-	
-	
-	cout << values[0] + 1 << endl;
+	cout << values[0] << endl;		// 顯示第一個結果答案 
 	
 	
 	
@@ -46,6 +43,7 @@ int main()
 	
 	return 0;
 }
+
 
 int HW1()
 {
