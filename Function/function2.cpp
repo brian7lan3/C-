@@ -1,21 +1,27 @@
 #include <iostream>
 #include <string>
-#include <stdio.h>
+//#include <stdio.h>
 
 using namespace std;
 
 
 
-int main()		//¦b¨ç¼Æ¦Wmain 
+void greeting(void)
 {
+	cout << "000HI HI HI ! ! ! " << endl;
+}
+
+
+int main()
+{
+	//int value1 = 5, value2 = 10;
 	
-	void greeting();
+	greeting();
 	
+	//cout << adder(value1, value2) << endl;
+	//cout << adder(3, 4) << endl;
 	
 	return 0;
 }
 
-void greeting(void)
-{
-	cout << "Hello fromthe greeting function function." << endl;
-}
+
