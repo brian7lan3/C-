@@ -4,18 +4,9 @@
 
 using namespace std;
 
+void greeting(void);
+long adder(int x, int y);		//ㄓ琌璶ㄧ计Θ 
 
-
-void greeting(void)		//ㄧ计抖Τ畉硂ㄧ计璶 (ぃ礛穦岿粇 
-{
-	cout << "000HI HI HI ! ! ! " << endl;
-}
-
-
-long adder(int x, int y)
-{
-	return x + y;
-}
 
 
 int main()
@@ -31,3 +22,13 @@ int main()
 }
 
 
+void greeting(void)		//ㄧ计抖Τ畉硂ㄧ计璶 (ぃ礛穦岿粇 
+{
+	cout << "000HI HI HI ! ! ! " << endl;
+}
+
+
+long adder(int x, int y)		//ㄧ计抖Τ畉 
+{
+	return x + y;
+}
