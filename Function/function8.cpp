@@ -4,7 +4,7 @@
 
 using namespace std;
 
-
+//從函數傳回結構 
 struct complex_number
 {
 	int real;
