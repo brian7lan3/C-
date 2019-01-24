@@ -24,13 +24,13 @@ int main()
 	
 	
 	pointer -> student_id = 1111;
-	array[0] = pointer -> student_id;
+	*array = pointer -> student_id;
 	
 	pointer -> next -> student_id = 2222;
-	array[1] = pointer -> next -> student_id;
+	*(array + 1) = pointer -> next -> student_id;
 	
 	pointer -> next -> next -> student_id = 3333;
-	array[2] = pointer -> next -> next -> student_id;
+	*(array + 2) = pointer -> next -> next -> student_id;
 	
 	cout << array[0] << endl;
 	cout << array[1] << endl;
