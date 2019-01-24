@@ -3,23 +3,31 @@
 //#include <stdio.h>
 
 using namespace std;
- void function(void);
+
+void greeting(void);
+long adder(int x, int y);
 
  
 int main()
 {
-	string color ("red");
+	int value1 = 5, value2 = 10;
 	
-	cout << "In main the color is " << color << endl; 
-	function();
+	greeting();
+	cout << value1 << " + " << value2 << " = " << adder(value1, value2) << endl; 
+
 	
 	return 0;
 }
 
 
-void function (void)
+void greeting (void)
 {
-	string color ("green");
 	
-	cout << "in the function the color is " << color << endl;
+	cout << "Hello from the greeting function. " << endl;
+}
+
+
+long adder(int x, int y)
+{
+	return x + y;
 }
