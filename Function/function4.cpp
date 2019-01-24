@@ -5,7 +5,7 @@
 using namespace std;
 
 
-long adder(int array[], int number_elements);
+long adder(const int array[], int number_elements);
  
 int main()
 {
@@ -23,7 +23,7 @@ int main()
 
 
 
-long adder(int array[], int number_elements)
+long adder(const int array[], int number_elements)
 {
 	long sum = 0;
 	
