@@ -10,7 +10,6 @@ void printem(string text);
 void caller_function(string text, void (*pointer_to_function)(string));
 
 //使用指向函數的指標 
-int factorial(int value); 
 
 int main()
 {	
