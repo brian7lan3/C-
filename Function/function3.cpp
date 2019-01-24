@@ -1,4 +1,4 @@
-#include <iostream>
+#include <iostream>	//iostream裡面包含了cout 
 #include <string>
 //#include <stdio.h>
 
