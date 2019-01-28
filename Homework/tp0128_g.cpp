@@ -34,15 +34,26 @@ int main(){
 	
 	cout << endl;
 	
-	sort(array, array + 3);
-	cout << *ptr << endl;
-	cout << *(ptr + 1) << endl;
-	cout << *(ptr + 2) << endl;
+	//----------------------------------------
+	int i, j, tmp;
 	
-	reverse(array, array + 3);
-	cout << *ptr << endl;
-	cout << *(ptr + 1) << endl;
-	cout << *(ptr + 2) << endl;
+	for(j = 0; j < 3; j++)
+	{
+		for(i = 0; i < 3 - j - 1; i++)
+		{
+			if(array[i] > array[i + 1])
+			{
+				tmp = array[i];
+				array[i] = array[i + 1];
+				array[i + 1] = tmp;
+			}
+		}
+	}
+
+    for(i=0;i<3;i++)
+        cout << array[i] << ",";
+
+
 	
 	return 0;
 }
