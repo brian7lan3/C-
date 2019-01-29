@@ -5,25 +5,33 @@
 
 using namespace std;
 
+
+
+
 struct S{
-	int id;
-}s[100];
+	S(char cData,S *pNext)
+    {
+       data = cData;
+       next = pNext;
+    }
+    char data;
+    S *next;
+    
+};
 
+S *ptr = new S('c', 0 );
 
-void add_structure(string new_s, int c1);
 
 int main(){
 	
-	
-	add_structure("n", 1);
 
 
 	return 0;
 }
 
-void add_structure(string new_s, int c1)
+S* create_array(int c1)
 {
-//	S *new_s = new S;
-//	tmp = s[c1];
-	
+
+
 }
+
