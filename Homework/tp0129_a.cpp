@@ -34,7 +34,7 @@ int main(){
 	
 	cout << endl;
 
-	sort_array(array, 0, 3);
+	sort_array(array, 0, 2);
 	
 	for(int i = 0; i < 3; i++)
     	cout << array[i] << ",";
@@ -46,12 +46,12 @@ int sort_array(int array[], int first_elements, int last_elements)
 {
 	int i, j, tmp;
 	
-	for(j = first_elements; j < last_elements; j++)
+	for(j = first_elements; j <= last_elements; j++)
 	{
-		for(i = first_elements; i < last_elements - j - 1; i++)
+		for(i = first_elements; i <= last_elements - j - 1; i++)
 		{
-			for(int i = first_elements; i < last_elements; i++)
-    			cout << array[i] << ",";
+			for(int x = first_elements; x <= last_elements; x++)
+    			cout << array[x] << ",";
     		cout << endl;
     		
 			if(array[i] > array[i + 1])
