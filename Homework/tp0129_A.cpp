@@ -6,9 +6,8 @@
 using namespace std;
 
 
-
-
-struct S{
+struct S
+{
 	S(char cData,S *pNext)
     {
        data = cData;
@@ -16,8 +15,8 @@ struct S{
     }
     char data;
     S *next;
-    
 };
+
 
 S *ptr = new S('c', 0 );
 
@@ -28,10 +27,3 @@ int main(){
 
 	return 0;
 }
-
-S* create_array(int c1)
-{
-
-
-}
-
