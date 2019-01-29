@@ -6,7 +6,7 @@
 using namespace std;
 
 
-void add_one_ptrs(long * n);
+void add_one_ptrs(long * n);	//first
 
 void add_one_refs(long & n);
 
@@ -16,7 +16,7 @@ int main(){
 	
 	cout << "Current salary: $" << salary << endl;
 	
-	add_one_ptrs(&salary);
+	add_one_ptrs(&salary);	//first
 	
 	cout << "After the first raise: $" << salary << endl;
 	
@@ -28,7 +28,7 @@ int main(){
 }
 
 
-void add_one_ptrs(long * n)
+void add_one_ptrs(long * n)	//first
 {
 	(*n)++;
 }
