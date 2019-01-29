@@ -29,6 +29,8 @@ int main(){
 	
 	S *ptr3 = new S('e', ptr2);
 	
+	S *ptr4 = new S('f', ptr3);
+	
 	cout << ptr -> data << endl;
 	cout << ptr -> next << endl;
 	
@@ -40,5 +42,8 @@ int main(){
 	
 	cout << ptr3 -> next -> next -> data << endl;
 	cout << ptr3 -> next -> next -> next << endl;
+	
+	cout << ptr4 -> next -> next -> next -> data << endl;
+	cout << ptr4 -> next -> next -> next -> next << endl;
 	return 0;
 }
