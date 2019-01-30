@@ -9,7 +9,7 @@ int count = 0;
 
 struct S
 {
-	S(void){};
+//	S(void){};
 	
 //	S(char cData,S *pNext)
 //    {
@@ -23,18 +23,19 @@ struct S
 int N = 10;
 
 
-S new_structure(S my);
+S new_structure(S up, S down);
  
  
 int main(){
 //	第一步先寫N行的函數
 //	第二步寫new新增的方式
 
-
+{
 //	w[0].next = &w[1];
 //	w[1].next = &w[2];
 //	w[2].next = &w[3];
 //	w[3].next = &w[4];
+}
 	S w[N];
 	
 	for(int i = 0; i < N; i++){
@@ -42,24 +43,26 @@ int main(){
 	}
 	
 
-	S new_structure(w[1]);
+	S new_structure(w[1], w[2]);
 	
-
+{
 //	S *ptr = new S('c', 0 );
 //	
 //	S *ptr2 = new S('d', ptr);
-	
-	w[0].next -> next -> next -> next -> data = 'b';
+}
+	w[0].next -> next -> next -> next -> data = 'y';
 	cout << w[4].data << endl;
 
 	return 0;
 }
 
-S new_structure(S my){
+S new_structure(S up, S down){
 	
-	S *newxss = new S;
+	S *newStructure = new S;
 	
- 	my.next = newxss;
+ 	up.next = newStructure;
  	
- 	return my;
+ 	newStructure.next = &down;
+ 	
+ 	return up, down;
 }
