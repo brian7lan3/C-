@@ -1,5 +1,5 @@
 #include <iostream>
-//
+#include <stdlib.h>
 using namespace std;
 
 class OneDim{
@@ -28,6 +28,7 @@ int main(){
 	td.showx();
 	td.showy();
 	
-
+	td.x = 1001;
+	td.y = 1002;
 	
 }
