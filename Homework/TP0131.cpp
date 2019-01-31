@@ -8,7 +8,7 @@ struct node{
 
 void insert_node(node *ptr, int c);
 
-void remove_node(node *ptr, int c);
+void remove_node(node *ptr, node *del);
 
 int main(){
 	
@@ -19,7 +19,7 @@ int main(){
 	
 	insert_node(&w[0], 1);
 	
-	remove_node(&w[0], 2);
+	remove_node(&w[0], &w[2]);
 	
 	
 	
@@ -38,17 +38,14 @@ void insert_node(node *ptr, int c){
 }
 
 
-void remove_node(node *ptr, int c)
+void remove_node(node *ptr, node *del)
 {
-	node *prev = new node;
 	
-	for(int i = 0; i <= c - 1; i++){
+	while(ptr -> next != del){
 		ptr = ptr -> next;
 	}
-	prev = ptr -> next -> next;
 	
-//	ptr -> next = NULL;
-	ptr -> next = prev;
+	ptr -> next = del -> next;
 	
-	delete w[2];
+	delete[] del;
 }
