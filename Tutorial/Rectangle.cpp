@@ -31,13 +31,21 @@ int Rectangle::printArea()
 }
 
 int main(){
-	Rectangle r1(10, 20), r2;
+	Rectangle r;
+	
+	int mylength;
+	cout << "Please input lebgth:";
+	cin >> mylength;
+	r.setLength(mylength);
+	
+	int mywidth;
+	cout << "Please input width:";
+	cin >> mywidth;
+	r.setWidth(mywidth);
 	
 	int Area;
-	Area = r1.printArea();
-	cout << "r1 is " << Area << endl;
-	Area = r2.printArea();
-	cout << "r2 is " << Area << endl;
+	Area = r.printArea();
+	cout << "Area: " << Area << endl;
 	
 	system("PAUSE");
 	return 0;
