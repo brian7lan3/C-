@@ -44,6 +44,7 @@ void remove_node(node *ptr, node *del)
 	while(ptr -> next != del){
 		ptr = ptr -> next;
 	}
+	ptr -> next = NULL;
 	
 	ptr -> next = del -> next;
 	
