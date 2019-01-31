@@ -47,11 +47,8 @@ void remove_node(node *ptr, int c)
 	}
 	prev = ptr -> next -> next;
 	
-	ptr -> next = NULL;
+//	ptr -> next = NULL;
+	ptr -> next = prev;
 	
-	delete &w[2];
-	
-	
-	
-	
+	delete w[2];
 }
