@@ -4,6 +4,8 @@ using namespace std;
 class Rectangle{
 	
 	public:
+		Rectangle();
+		Rectangle(int l, int w);
 		
 		void setLength(int );
 		void setWidth(int );
@@ -14,6 +16,16 @@ class Rectangle{
 		int length;
 		int width;
 };
+
+Rectangle::Rectangle(){
+	length = 5;
+	width = 10;
+}
+
+Rectangle::Rectangle(int l, int w){
+	length = l;
+	width = w;
+}
 
 void Rectangle::setLength(int l)
 {
