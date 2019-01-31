@@ -48,5 +48,5 @@ void remove_node(node *ptr, node *del)
 	
 	ptr -> next = del -> next;
 	
-	delete[] del;
+	delete del;
 }
