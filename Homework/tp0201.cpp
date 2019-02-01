@@ -4,7 +4,7 @@ using namespace std;
 struct node{
 	int data;
 	node *next;
-}w[10];
+};
 
 void insert_node(node *ptr, int c);
 
@@ -12,17 +12,16 @@ void remove_node(node *ptr, node *del);
 
 int main(){
 	
+	node *w = new node[10];
+	
 	for(int i = 0; i < 10 - 1; i++){
 		w[i].next = &w[i + 1];
 	}
-
+	
 	
 	insert_node(&w[0], 1);
 	
 	remove_node(&w[0], &w[2]);
-	
-	
-	
 }
 
 void insert_node(node *ptr, int c){
@@ -48,5 +47,5 @@ void remove_node(node *ptr, node *del)
 	
 	ptr -> next = del -> next;
 	
-	delete *(del + 2);
+	delete[] del;
 }
