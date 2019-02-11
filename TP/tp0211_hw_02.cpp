@@ -60,11 +60,14 @@ void remove_node(node *ptr, int d)
 		ptr = ptr -> next;
 	}
 	
+	node *del_node;
+	del_node = ptr -> next;
+	
 	node *next_node;	
-	next_node = ptr -> next -> next;
+	next_node = del_node -> next;
 	
 	
-	delete[] (ptr -> next);
+	delete[] del_node;
 	
 	ptr -> next = next_node;
 }
