@@ -55,7 +55,7 @@ int main(){
 	w8 -> next = w9;
 
 
-	insert_node(w0, 1);
+	insert_node(w0, 7);
 	
 	
 	
