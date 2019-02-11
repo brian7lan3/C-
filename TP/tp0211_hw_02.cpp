@@ -56,19 +56,13 @@ void insert_node(node *ptr, int c){
 void remove_node(node *ptr, int d)
 {
 	
-//	while(ptr -> next != del){
-//		ptr = ptr -> next;
-//	}
-
 	for(int i = 0; i < d; i++){
 		ptr = ptr -> next;
 	}
 	
-	node *next_node = new node;
-	
+	node *next_node;	
 	next_node = ptr -> next -> next;
 	
-//	ptr -> next = ptr -> next -> next -> next;
 	
 	delete[] (ptr -> next);
 	
