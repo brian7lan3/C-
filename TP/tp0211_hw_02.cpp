@@ -66,7 +66,7 @@ void remove_node(node *ptr, int d)
 	
 	node *next_node = new node;
 	
-	next_node = ptr -> next -> next -> next;
+	next_node = ptr -> next -> next;
 	
 //	ptr -> next = ptr -> next -> next -> next;
 	
