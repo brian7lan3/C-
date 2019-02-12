@@ -4,12 +4,14 @@ using namespace std;
 
 class bird_class
 {
+	private:
+		int number_seen;
 	public:
 		string name;
-		int number_seen;
 		void increment_count(){
 			number_seen++;
 		}
+		int get_count(){return number_seen;}
 		bird_class (string text);
 };
 
@@ -25,7 +27,7 @@ int main()
 	
 	orioles.increment_count();
 	
-	cout << "number of " << orioles.name << "s seen: " << orioles.number_seen << endl;
+	cout << "number of " << orioles.name << "s seen: " << orioles.get_count() << endl;
 	
 	return 0;
 }
